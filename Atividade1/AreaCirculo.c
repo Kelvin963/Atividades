@@ -23,8 +23,5 @@ printf ("Entao a area do circulo e igual a %f", A );
 
 
 
-
-
-
     
 }
