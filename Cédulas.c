@@ -4,13 +4,14 @@ int main (){
 
 int numerodenotas, valoremreais;
 
+
 scanf ("%d", &valoremreais);
 printf ("%d\n", valoremreais);
 
 //valor em reais 576
 
-numerodenotas = valoremreais / 100;  //numero de notas = 5 /divisao
-valoremreais = valoremreais % 100;   // valor em reais = 76 %resto
+numerodenotas = valoremreais / 100;  //numero de notas = 5 / divisao
+valoremreais = valoremreais % 100;   // valor em reais = 76 % resto
 printf ("%d Nota(s) de R$100,00 \n", numerodenotas);
 
 numerodenotas = valoremreais / 50;  //numero de notas = 1
