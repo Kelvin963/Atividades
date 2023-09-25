@@ -5,47 +5,36 @@ int jogosolimpicos[29] = {1896, 1900, 1904, 1908, 1912, 1920, 1924, 1928, 1932, 
 int copadomundo[21] = {1930, 1934, 1938, 1950, 1954, 1958, 1962, 1966, 1970, 1974, 1978, 1982, 1986, 1990, 1994, 1998, 2002, 2006, 2010, 2014, 2018};
 
 int numero;
+int i;
+int pesqevento = 0;
 
-scanf ("%d", &numero);
+printf("Insira um ano:");
+scanf("%d", &numero);
 
-for (    ){
-
-    printf("Os Jogos Olímpicos de Verão ocorreram no ano de");
+for (i = 0; i < 29; i++){
+    if(jogosolimpicos[i] == numero){
+        printf("Neste ano ocorreu os Jogos Olimpicos de Verao: %d\n", numero);
+        pesqevento = 1;
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*if (numero == jogosolimpicos[28]){
-
-    printf("Os Jogos Olímpicos de Verão ocorreram no ano de \n%d", numero);
+for (i = 0; i < 21; i++){
+    if (copadomundo[i] == numero){
+        printf("Neste ano ocorreu uma Copa do Mundo de Futebol: %d\n", numero);
+        pesqevento = 1;
+        break;
+    }
 }
-
-*/
-
-
-
+    if(pesqevento == 0){
+        printf("Neste ano nao ocorreu nenhum evento: %d\n", numero);
+    }
 
 
-return 0;
+
+
+
+
+
+
+    return 0;
 }
